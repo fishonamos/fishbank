@@ -1,8 +1,8 @@
 
-```markdown
 # My Programming learning course | Simple Bank Account Application
 
-This is a simple bank account application written in C++. The app allows you to create a bank account, deposit money, withdraw money, and check the balance.
+This is a simple bank account application written in C++. 
+The app allows you to create a bank account, deposit money, withdraw money, and check the balance.
 
 ## How to Compile and Run
 
@@ -28,9 +28,9 @@ This is a simple bank account application written in C++. The app allows you to 
 
 ## Files
 
-- `BankAccount.h`: Header file for the `BankAccount` class.
-- `BankAccount.cpp`: Implementation file for the `BankAccount` class.
-- `main.cpp`: Main driver program.
+- BankAccount.h: Header file for the BankAccount class.
+- BankAccount.cpp: Implementation file for the BankAccount class.
+- main.cpp`: Main driver program.
 
 ## Features
 
@@ -40,8 +40,6 @@ This is a simple bank account application written in C++. The app allows you to 
 - Check the account balance.
 
 ## Usage
-
-```bash
 Bank Account Management System
 1. Create Account
 2. Deposit Money
@@ -49,7 +47,7 @@ Bank Account Management System
 4. Check Balance
 5. Exit
 Enter your choice:
-```
+
 
 Follow the prompts to manage your bank account.
 
