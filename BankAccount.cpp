@@ -15,7 +15,7 @@ std::string BankAccount::getAccountHolderName() const {
 double BankAccount::getBalance() const {
     return balance;
 }
-
+//get the balance
 void BankAccount::deposit(double amount) {
     if (amount > 0) {
         balance += amount;
