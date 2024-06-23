@@ -1,23 +1,24 @@
-name: C/C++ CI
+name: C++ Compile and Run
 
 on:
   push:
-    branches: [ "new" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "new" ]
+    branches: [ main ]
 
 jobs:
-  build: g++ -o bank_account main.cpp BankAccount.cpp
-
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up C++ environment
+      run: sudo apt-get install -y g++
+
+    - name: Compile the program
+      run: g++ -o bank_account main.cpp BankAccount.cpp
+
+    - name: Run the program
       run: ./bank_account
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
