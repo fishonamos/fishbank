@@ -7,7 +7,7 @@ on:
     branches: [ "new" ]
 
 jobs:
-  build:
+  build: g++ -o bank_account main.cpp BankAccount.cpp
 
     runs-on: ubuntu-latest
 
